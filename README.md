@@ -6,6 +6,8 @@
 
 [Fudan University]
 
+[Shanghai Innovation Intuition]
+
 [Shanghai AI Lab]
 
 [Shanghai Academy of AI for Science]
@@ -27,7 +29,7 @@
 
 This repository release the **UnifiedReward** -- the first unified reward model for multimodal understanding and generation assessment, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
 
-<img src=./docs/images/pipeline.png width="100%"/>
+<img src=./docs/static/images/pipeline.png width="100%"/>
 
 
 ## 🏁 Compared with Current Reward Models
