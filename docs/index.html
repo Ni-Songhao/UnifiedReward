@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
+  
+  <meta name="description" content="Unified Reward Model for Multimodal Understanding and Generation">
+  <meta name="keywords" content="Reward Model, Preference Alignment, DPO">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnifiedReward</title>
+
+
+  <link rel="shortcut icon" href="https://picx.zhimg.com/v2-cb40b1f8c3125f3cfb9a4538e1c0f2b7_l.jpg?source=32738c0c" type="image/x-icon">
+  <link href="./static/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/bulma.min.css">
+  <link rel="stylesheet" href="./static/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/academicons.min.css">
+  <link rel="stylesheet" href="./static/index.css">
+  <link rel="stylesheet" href="./static/leaderboard.css">
+
+  <script type="text/javascript" src="./static/sort-table.js" defer=""></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer="" src="./static/fontawesome.all.min.js"></script>
+  <script src="./static/bulma-carousel.min.js"></script>
+  <script src="./static/bulma-slider.min.js"></script>
+  <script src="./static/explorer-index.js"></script>
+  <script src="./static/question_card.js"></script>
+
+  <script src="./static/leaderboard_testmini.js"></script>  
+  <script src="./static/output_folders.js" defer=""></script>
+  <script src="./static/model_scores.js" defer=""></script>
+
+  <script src="./static/data_public.js" defer=""></script>
+
+  <style>
+      .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: -20px;
+        }
+    .node {
+      fill: #f8f1e4;
+      stroke: #000;
+      stroke-width: 1;
+      rx: 10;
+      ry: 10;
+    }
+    .node text {
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 2;
+    }
+    .badge {
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold" style="display: inline-block; margin-right: 0px;">
+            <span style="vertical-align: middle">Unified Reward Model for Multimodal Understanding and Generation</span>
+            </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codegoat24.github.io/"><b>Yibin Wang</b></a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://yuhangzang.github.io/"><b>Yuhang Zang</b></a><sup>3</sup><sup>†</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en"><b>Hao Li</b></a><sup>1,2,4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>1</sup><sup>†</sup>,</span>
+              <span class="author-block">
+                <a href="https://myownskyw7.github.io/"><b>Jiaqi Wang</b></a><sup>2,3</sup><sup>†</sup>,</span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Fudan University,</span> <br>
+            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Shanghai Innovation Intuition,</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>3</sup>Shanghai AI Lab,</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>4</sup>Shanghai Academy of Artificial Intelligence for Science</span>
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          </div>
+          <span class=""><sup>†</sup>Corresponding Author</span>
+        
+          <!-- ArXiv Link. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/UnifiedReward" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Checkpoints</span>
+                </a>
+              </span> 
+
+              <span class="link-block">
+                <a href="https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span> 
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Begin Teaser -->
+<div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="content has-text-centered">
+        <img src="static/images/intro.png" alt="data-overview" width="800" height="600">
+      </div>
+      <div class="hero-body">
+        <h2 class="subtitle has-text-justified">
+          <p class="has-text-centered"><b>Overview of our UnifiedReward for multimodal understanding and generation alignment</b>, including three steps: (1) Unified Reward Model Training, (2) Preference Data Construction, and (3) Generation/Understand Model Alignment.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Teaser -->
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            <p>
+              Recent advances in human preference alignment have significantly enhanced multimodal generation and understanding. A key approach is training reward models to guide preference optimization. However, existing models are often task-specific, limiting their adaptability across diverse visual applications. We also argue that jointly learning to assess multiple tasks may foster a synergistic effect, where improved image understanding enhances image generation assessment, and refined image evaluation benefits video quality assessment through better frame analysis.
+To this end, this paper proposes UnifiedReward, the first unified reward model for multimodal understanding and generation assessment, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. Specifically, (1) we first develop UnifiedReward on our constructed large-scale human preference dataset, including both image and video generation/understanding tasks. (2) Then, it is utilized to automatically construct high-quality preference pair data based on the vision models, fine-gradually filtering their outputs through pair ranking and point sifting.
+(3) Finally, these data are used for their preference alignment through direct preference optimization. Our experimental results demonstrate that joint learning to assess diverse visual tasks can lead to substantial mutual benefits and we apply our pipeline to both image and video understanding/generation tasks, significantly improving the performance in each domain.
+            </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!--/ Abstract. -->
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Compared with Current Reward Models</h2>
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/comared_reward_model.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"><b>Comparison of Our Rewad Method with Recent Approaches.</b> <br> UnifiedReward is capable of assessing both image and video understanding and generation. “Pair” and “Point” refer to “Pair Ranking” and “Point Scoring”, respectively.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/pipeline.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="has-text-justified" style="margin-top: -1cm;">
+        <p class=""><b>Method Overview.</b> This figure illustrates our proposed pipeline, which consists of three key stages: <br>
+          (1) <b>Unified Reward Model Training</b>: We train a unified reward model to evaluate both multimodal generation and understanding tasks using pointwise scoring and pairwise ranking strategy. <br>
+          (2) <b>Preference Data Construction</b>: We leverage the trained reward model to construct high-quality preference data through three steps: (a) data generation from VLM/Diffusion, (b) pairwise ranking to divide the chosen and rejected outputs, and (c) pointwise filtering to refine the chosen and rejected samples.<br>  
+          (3) <b>Generation/Understanding Model Alignment</b>: The constructed preference data is then used to fine-tune VLM/Diffusion via Direct Preference Optimization, aligning their outputs with human preferences.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Constructed Unified Preference Dataset</h2>
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/dataset_info.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"><b>Visualization of Statistical Results.</b> <br> This figure presents the distribution of our constructed unified preference dataset, along with the pairwise and pointwise distributions for each task.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reward Model Quantitative Comparison</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/quantitative_tables.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">DPO Quantitative Comparison</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/DPO_comparison.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Comparison</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 100%;">
+        <img src="./static/images/video_qualitative.png" alt="pipeline" >
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/image_qualitative.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+</section>
+      
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+    </code></pre>
+  </div>
+</section>
+
+</body></html>
