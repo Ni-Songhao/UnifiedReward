@@ -40,6 +40,7 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 |  [HPS](https://github.com/tgxs002/HPSv2) | Point | √ |  |||
 |  [ImageReward](https://github.com/THUDM/ImageReward) |  Point| √|  |||
 |  [LLaVA-Critic](https://huggingface.co/lmms-lab/llava-critic-7b) | Pair/Point | | √  |||
+|  [IXC-2.5-Reward](https://github.com/InternLM/InternLM-XComposer) | Pair/Point | | √  ||√|
 |  [VideoScore](https://github.com/TIGER-AI-Lab/VideoScore) | Point |  |  |√ ||
 |  [LiFT](https://github.com/CodeGoat24/LiFT) | Point |  |  |√| |
 |  [VisionReward](https://github.com/THUDM/VisionReward) | Point |√  | |√||
