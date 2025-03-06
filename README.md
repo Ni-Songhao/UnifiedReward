@@ -6,7 +6,7 @@
 
 [Fudan University]
 
-[Shanghai Innovation Intuition]
+[Shanghai Innovation Institute]
 
 [Shanghai AI Lab]
 
