@@ -213,7 +213,7 @@ pip install -r requirements.txt
 ```
 Prepare Checkpoints
 
-run following instruction to download VideoCrafter checkpoints. 
+Run following instruction to download VideoCrafter checkpoints. 
 ```bash
 mkdir -p checkpoints/vc2
 wget -P checkpoints/vc2 https://huggingface.co/VideoCrafter/VideoCrafter2/resolve/main/model.ckpt
