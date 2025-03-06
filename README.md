@@ -211,8 +211,15 @@ conda create -n videodpo python=3.10 -y
 conda activate videodpo
 pip install -r requirements.txt
 ```
+Prepare Checkpoints
 
-Please download the our constructed T2V-Turbo model and its reference model from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a) and put it in `./checkpoints/t2v-turbo`.
+run following instruction to download VideoCrafter checkpoints. 
+```bash
+mkdir -p checkpoints/vc2
+wget -P checkpoints/vc2 https://huggingface.co/VideoCrafter/VideoCrafter2/resolve/main/model.ckpt
+```
+
+Please download our constructed T2V-Turbo model and its reference model from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a) and put it in `./checkpoints/t2v-turbo`.
 
 #### 1. Construct Preference data
 Video Generation
