@@ -190,7 +190,7 @@
             <p>
               Recent advances in human preference alignment have significantly enhanced multimodal generation and understanding. A key approach is training reward models to guide preference optimization. However, existing models are often task-specific, limiting their adaptability across diverse visual applications. We also argue that jointly learning to assess multiple tasks may foster a synergistic effect, where improved image understanding enhances image generation assessment, and refined image evaluation benefits video quality assessment through better frame analysis.
 To this end, this paper proposes UnifiedReward, the first unified reward model for multimodal understanding and generation assessment, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. Specifically, (1) we first develop UnifiedReward on our constructed large-scale human preference dataset, including both image and video generation/understanding tasks. (2) Then, it is utilized to automatically construct high-quality preference pair data based on the vision models, fine-gradually filtering their outputs through pair ranking and point sifting.
-(3) Finally, these data are used for their preference alignment through direct preference optimization. Our experimental results demonstrate that joint learning to assess diverse visual tasks can lead to substantial mutual benefits and we apply our pipeline to both image and video understanding/generation tasks, significantly improving the performance in each domain.
+(3) Finally, these data are used for their preference alignment through direct preference optimization (DPO). Our experimental results demonstrate that joint learning to assess diverse visual tasks can lead to substantial mutual benefits and we apply our pipeline to both image and video understanding/generation tasks, significantly improving the performance in each domain.
             </p>
 
         </div>
@@ -219,7 +219,7 @@ To this end, this paper proposes UnifiedReward, the first unified reward model f
     
     <div class="hero-body">
       <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
-        <p class="has-text-centered"><b>Comparison of Our Rewad Method with Recent Approaches.</b> <br> UnifiedReward is capable of assessing both image and video understanding and generation. “Pair” and “Point” refer to “Pair Ranking” and “Point Scoring”, respectively.</p>
+        <p class="has-text-centered"><b>Comparison of Our Reward Method with Recent Approaches.</b> <br> UnifiedReward is capable of assessing both image and video understanding and generation. “Pair” and “Point” refer to “Pair Ranking” and “Point Scoring”, respectively.</p>
       </h2>
     </div>
     
@@ -247,9 +247,9 @@ To this end, this paper proposes UnifiedReward, the first unified reward model f
     
     <div class="hero-body">
       <h2 class="has-text-justified" style="margin-top: -1cm;">
-        <p class=""><b>Method Overview.</b> This figure illustrates our proposed pipeline, which consists of three key stages: <br>
+        <p class=""><b>Method Overview.</b> The pipeline of UnifiedReward consists of three key stages: <br>
           (1) <b>Unified Reward Model Training</b>: We train a unified reward model to evaluate both multimodal generation and understanding tasks using pointwise scoring and pairwise ranking strategy. <br>
-          (2) <b>Preference Data Construction</b>: We leverage the trained reward model to construct high-quality preference data through three steps: (a) data generation from VLM/Diffusion, (b) pairwise ranking to divide the chosen and rejected outputs, and (c) pointwise filtering to refine the chosen and rejected samples.<br>  
+          (2) <b>Preference Data Construction</b>: We use the trained reward model to construct high-quality preference data through three steps: (a) data generation from VLM/Diffusion, (b) pairwise ranking to divide the chosen and rejected outputs, and (c) pointwise filtering to refine the chosen and rejected samples.<br>  
           (3) <b>Generation/Understanding Model Alignment</b>: The constructed preference data is then used to fine-tune VLM/Diffusion via Direct Preference Optimization, aligning their outputs with human preferences.</p>
       </h2>
     </div>
