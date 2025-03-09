@@ -48,6 +48,7 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 |  UnifiedReward (Ours) | Pair/Point | √ | √ |√|√|
 
 ## 🔥 News
+Please leave us a star ⭐ if you find our work helpful.
 - [2025/3] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/3] 🔥🔥 We released image and video generation DPO code
 - [2025/3] 🔥🔥 We released image and video understanding DPO code
@@ -286,13 +287,11 @@ quality assessment.
 If you have any comments or questions, please open a new issue or feel free to contact [Yibin Wang](https://codegoat24.github.io).
 
 ## 🤗 Acknowledgments
-In this work, reward model and image/video understanding DPO code is based on [LLaVA-Next](https://github.com/LLaVA-VL/LLaVA-NeXT). while image and video generation DPO is based on [DiffusionDPO](https://github.com/SalesforceAIResearch/DiffusionDPO) and [VideoDPO](https://github.com/CIntellifusion/VideoDPO), 
+In this work, reward model and image/video understanding DPO code is based on [LLaVA-Next](https://github.com/LLaVA-VL/LLaVA-NeXT), while image and video generation DPO is based on [DiffusionDPO](https://github.com/SalesforceAIResearch/DiffusionDPO) and [VideoDPO](https://github.com/CIntellifusion/VideoDPO). 
 
 We also utilize [LMMs-Eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) and [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) toolkits for evaluation.
 
 Thanks to all the contributors!
 
 ## ⭐ Citation
-
-Please leave us a star ⭐ if you find our work helpful.
 ```bibtex
