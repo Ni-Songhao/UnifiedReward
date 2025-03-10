@@ -15,7 +15,7 @@
 (&#8224;corresponding author)
 
 
-<a href="">
+<a href="https://arxiv.org/pdf/2503.05236">
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/UnifiedReward/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
@@ -55,7 +55,7 @@ Please leave us a star ⭐ if you find our work helpful.
 - [2025/3] 🔥🔥 We released UnifiedReward training code
 - [2025/3] 🔥🔥 We released our unified training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 - [2025/3] 🔥🔥 We released our checkpoints in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
-- [2025/3] 🔥 We released the [paper]().
+- [2025/3] 🔥 We released the [paper](https://arxiv.org/pdf/2503.05236).
 - [2025/3] 🔥 We launched the [project page](https://codegoat24.github.io/UnifiedReward/).
 
 ##  🔧 Environment Set Up
@@ -295,3 +295,9 @@ Thanks to all the contributors!
 
 ## ⭐ Citation
 ```bibtex
+@article{UnifiedReward,
+  title={Unified Reward Model for Multimodal Understanding and Generation.},
+  author={Wang, Yibin and Zang, Yuhang, and Li, Hao and Jin, Cheng and Wang Jiaqi},
+  journal={arXiv preprint arXiv:2503.05236},
+  year={2025}
+}
