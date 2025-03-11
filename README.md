@@ -49,6 +49,7 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/3] 🔥🔥 We released all pair rank and point score inference codes in `./inference` directory. 
 - [2025/3] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/3] 🔥🔥 We released image and video generation DPO code
 - [2025/3] 🔥🔥 We released image and video understanding DPO code
@@ -77,7 +78,7 @@ pip install -e ".[train]"
 
 
 ## 💻 Training UnifiedReward
-### 2. Unified Preference Training Dataset Preparation
+### 1. Unified Preference Training Dataset Preparation
 Please download our constructed unified preference dataset from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede) and put it in `./dataset/`.
 
 ```
@@ -101,10 +102,28 @@ dataset
 └── VideoFeedback
 └── train_data.yaml
 ```
-### 3. Training
+### 2. Training
 ```bash
 bash train.sh
 ```
+
+### 3. Inference
+We provide reference pair ranking and point score inference code for each task in the `./inference` directory.
+
+```bash
+inference
+├── image_generation                  
+    ├── pair_rank_image_generation.py            
+    └── point_score_image_generation.py         
+├── video_understanding                 
+    ├── pair_rank_video_understanding.py            
+    └── point_score_video_understanding.py
+... 
+```
+
+Note that our model is not constrained to a fixed input prompt style.
+You can flexibly adjust inputs based on your requirements.
+
 
 ## ✨ Direct Preference Optimization 
 ### 🎨 Image and Video Understanding DPO
