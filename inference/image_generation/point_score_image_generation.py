@@ -52,7 +52,7 @@ image_sizes = [image.size]
 
 cont = model.generate(
     input_ids,
-    images=image_tensor1,
+    images=image_tensor,
     image_sizes=image_sizes,
     do_sample=False,
     temperature=0,
