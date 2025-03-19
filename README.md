@@ -47,6 +47,55 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 |  [VideoReward](https://github.com/KwaiVGI/VideoAlign) | Point |  |  |√ ||
 |  UnifiedReward (Ours) | Pair/Point | √ | √ |√|√|
 
+<details>
+<summary>VLRewardBench Comparison Results</summary>
+
+| Models               | General | Hallu. | Reason. | Overall Accuracy | Macro Accuracy |
+|----------------------|---------|--------|---------|------------------|---------------|
+| Gemini-1.5-Pro      | 50.8    | 72.5   | 64.2    | 67.2         | 62.5          |
+| GPT-4o              | 49.1    | 67.6   | **70.5** | 65.8             | 62.4          |
+| LLaVA-Critic        | 47.4    | 38.5   | 53.8    | 46.9             | 46.6          |
+| OV-7B           | 32.2    | 20.1   | 57.1    | 29.6             | 36.5          |
+| **UnifiedReward**   | 60.6 | 78.4 | 60.5 | 66.1             | 66.5      |
+| **UnifiedReward-v1.5**   | **68.1** | **84.4** | 59.5 | **70.1**            | **70.7**      |
+</details>
+
+---
+
+<details>
+<summary>GenAI-Bench(Image) Comparison Results</summary>
+
+| Method            | GenAI-Bench |        |
+|------------------|------------|--------|
+|                  | tau        | diff   |
+| PickScore       | 53.2       | 67.2   |
+| HPSv2           | 51.6       | 68.4   |
+| ImageReward     | 47.8       | 65.0   |
+| VisionReward    | 46.8       | 66.4   |
+| OV-7B        | 39.7       | 53.2   |
+| **UnifiedReward** | 54.8  | 70.9 |
+| **UnifiedReward-v1.5** | **58.9**  | **72.4** |
+
+</details>
+
+---
+
+<details>
+<summary>GenAI-Bench(Video) and VideoGen-Reward Comparison Results</summary>
+
+| Method            | GenAI-Bench |        | VideoGen-Reward |        |
+|------------------|------------|--------|-----------------|--------|
+|                  | tau        | diff   | tau             | diff   |
+| VideoScore      | 46.2       | 70.6   | 42.1            | 49.9   |
+| LiFT            | 41.2       | 60.1   | 40.6            | 58.3   |
+| VisionReward    | 52.1       | 73.1   | 57.4            | 68.2   |
+| VideoReward     | 50.2       | 73.3   | 60.1            | 73.9   |
+| OV-7B        | 40.8       | 51.4   | 40.4            | 50.2   |
+| **UnifiedReward** | 60.7  | 77.2 | 66.6       | 79.3 |
+| **UnifiedReward-v1.5** | **61.7**  | **78.5** | **67.0**       | **80.5** |
+</details>
+
+
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
 - [2025/3] 🔥🔥 We released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5), which exhibits improved generalization and performance in multimodal reward assessment.
