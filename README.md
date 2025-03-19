@@ -20,8 +20,18 @@
 <a href="https://codegoat24.github.io/UnifiedReward/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 
+
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b-yellow">
+</a>
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b v1.5-yellow">
+</a>
+
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
+
+
 </div>
 
 
