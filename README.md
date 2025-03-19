@@ -49,6 +49,7 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/3] 🔥🔥 We released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5), which exhibits improved generalization and performance in multimodal reward assessment.
 - [2025/3] 🔥🔥 We released all pair rank and point score inference codes in `./inference` directory. 
 - [2025/3] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/3] 🔥🔥 We released image and video generation DPO code
