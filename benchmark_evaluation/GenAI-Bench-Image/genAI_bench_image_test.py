@@ -33,8 +33,8 @@ num_all_tie = 0
 for i in tqdm.trange(len(dataset)):
     data = dataset[i]
 
-    data['left_image'] = data['left_image']
-    data['right_image'] = data['right_image']
+    data['left_image'] = data['left_image'].resize((512, 512))
+    data['right_image'] = data['right_image'].resize((512, 512))
 
     image_tensor = process_images([data['left_image'], data['right_image']], image_processor, model.config)
     image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]
