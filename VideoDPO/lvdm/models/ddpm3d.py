@@ -796,8 +796,21 @@ class LatentDiffusion(DDPM):
                 )
                 * noise
             )
+            
+    @torch.no_grad()
+    def decode_first_stage_2DAE(self, z, **kwargs):
 
+        b, _, t, _, _ = z.shape
+        z = 1.0 / self.scale_factor * z
+        results = torch.cat(
+            [
+                self.first_stage_model.decode(z[:, :, i], **kwargs).unsqueeze(2)
+                for i in range(t)
+            ],
+            dim=2,
+        )
 
+        return results
 
     @rank_zero_only
     @torch.no_grad()
