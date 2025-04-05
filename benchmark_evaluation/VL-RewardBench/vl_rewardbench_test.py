@@ -129,7 +129,7 @@ for i in tqdm.trange(len(dataset)):
     
     group_total[group_mapping[dtype]] += 1
 
-    if 'Answer 1' in output and 'Answer 1' in answer or 'Answer 2' in output and 'Answer 2' in answer:
+    if answer in output:
         correct += 1
         group_correct[group_mapping[dtype]] += 1
         
