@@ -108,12 +108,18 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/4] 🔥🔥 We updated [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
+  1. **Alignment** quantifies how well an image matches its prompt.
+  2. **Coherence** assesses the logical consistency of the image and the absence of artifacts or visual glitches.
+  3. **Style** reflects the visual appeal of the image, independent of the prompt.
+
+  Welcome to try the latest version, and the inference code is in `./inference/point_score_ACS_image_generation.py`.
 - [2025/3] 🔥🔥 We released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5), which exhibits improved generalization and performance in multimodal reward assessment.
 - [2025/3] 🔥🔥 We released all pair rank and point score inference codes in `./inference` directory. 
 - [2025/3] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
-- [2025/3] 🔥🔥 We released image and video generation DPO code
-- [2025/3] 🔥🔥 We released image and video understanding DPO code
-- [2025/3] 🔥🔥 We released UnifiedReward training code
+- [2025/3] 🔥🔥 We released image and video generation DPO code.
+- [2025/3] 🔥🔥 We released image and video understanding DPO code.
+- [2025/3] 🔥🔥 We released UnifiedReward training code.
 - [2025/3] 🔥🔥 We released our unified training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 - [2025/3] 🔥🔥 We released our checkpoints in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
 - [2025/3] 🔥 We released the [paper](https://arxiv.org/pdf/2503.05236).
