@@ -67,7 +67,6 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 | LLaVA-Critic        | 47.4    | 38.5   | 53.8    | 46.9             | 46.6          |
 | OV-7B           | 32.2    | 20.1   | 57.1    | 29.6             | 36.5          |
 | **UnifiedReward**   | 60.6 | 78.4 | 60.5 | 66.1             | 66.5      |
-| **UnifiedReward-v1.5**   | **68.1** | **84.4** | 59.5 | **70.1**            | **70.7**      |
 </details>
 
 ---
@@ -84,7 +83,6 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 | VisionReward    | 46.8       | 66.4   |
 | OV-7B        | 39.7       | 53.2   |
 | **UnifiedReward** | 54.8  | 70.9 |
-| **UnifiedReward-v1.5** | **58.9**  | **72.4** |
 
 </details>
 
@@ -102,7 +100,6 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 | VideoReward     | 50.2       | 73.3   | 60.1            | 73.9   |
 | OV-7B        | 40.8       | 51.4   | 40.4            | 50.2   |
 | **UnifiedReward** | 60.7  | 77.2 | 66.6       | 79.3 |
-| **UnifiedReward-v1.5** | **61.7**  | **78.5** | **67.0**       | **80.5** |
 </details>
 
 
