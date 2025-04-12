@@ -34,7 +34,6 @@
 
 </div>
 
-
 ## 📖 Introduction
 
 This repository release the **UnifiedReward** -- the first unified reward model for multimodal understanding and generation assessment, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
@@ -104,6 +103,8 @@ This repository release the **UnifiedReward** -- the first unified reward model 
 
 
 ## 🔥 News
+😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
+
 Please leave us a star ⭐ if you find our work helpful.
 - [2025/4] 🔥🔥 We updated [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
   1. **Alignment** quantifies how well an image matches its prompt.
