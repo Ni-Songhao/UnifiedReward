@@ -34,7 +34,7 @@ group_mapping = {
         "rlaif-v": "hallucination",
         "wildvision-battle": "general"
     }
-random.seed(355843)
+random.seed(0)
 group_total['general'] = 0
 group_total['hallucination'] = 0
 group_total['reasoning'] = 0
@@ -52,7 +52,7 @@ for i in tqdm.trange(len(dataset)):
     conv_template = "qwen_1_5"  # Make sure you use correct chat template for different models
 
     if data['human_ranking'][0] == 0:
-        if random.choices([True, False], weights=[2, 1])[0]:
+        if random.choices([True, False])[0]:
             R1 = data['response'][0]
             R2 = data['response'][1]
             answer = 'Answer 1 is better'
@@ -61,7 +61,7 @@ for i in tqdm.trange(len(dataset)):
             R2 = data['response'][0]
             answer = 'Answer 2 is better'
     else:
-        if random.choices([True, False], weights=[1, 2])[0]:
+        if random.choices([True, False])[0]:
             R1 = data['response'][0]
             R2 = data['response'][1]
             answer = 'Answer 2 is better'
