@@ -136,6 +136,7 @@ conda create -n unifiedreward python=3.10 -y
 conda activate unifiedreward
 pip install --upgrade pip  
 pip install -e ".[train]"
+pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
 
