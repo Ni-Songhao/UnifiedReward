@@ -36,7 +36,7 @@ DS_SKIP_CUDA_CHECK=1 python3 -m torch.distributed.run --nnodes=$NNODES \
     --model_name_or_path $PREV_STAGE_CHECKPOINT \
     --version $PROMPT_VERSION \
     --data_path ${DATA_PATH} \
-    --mm_tunable_parts="mm_language_model" \
+    --mm_tunable_parts="mm_vision_tower,mm_mlp_adapter,mm_language_model" \
     --vision_tower ${VISION_MODEL_VERSION} \
     --mm_projector_type mlp2x_gelu \
     --mm_vision_select_layer -2 \
