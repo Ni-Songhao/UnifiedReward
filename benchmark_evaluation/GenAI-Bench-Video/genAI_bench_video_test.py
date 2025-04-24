@@ -101,7 +101,7 @@ for i in tqdm.trange(len(dataset)):
 
     data = dataset[i]
     answer = 'A' if 'left' in data['vote_type'] else 'B'
-    if 'both' in data['vote_type']:
+    if 'both' in data['vote_type'] or 'tie' in data['vote_type']:
         answer = 'same'
         num_tie += 1
     prompt = data['prompt']
