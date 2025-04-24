@@ -38,6 +38,7 @@
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/4] 🔥🔥 We released [UnifiedReward-0.5B](https://huggingface.co/CodeGoat24/UnifiedReward-0.5b). Feel free to use it based on your needs.
 - [2025/4] 🔥🔥 We updated [UnifiedReward-7B](https://huggingface.co/CodeGoat24/UnifiedReward-7b), incorporating valuable feedback from the community, and released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
   1. **Alignment** quantifies how well an image matches its prompt.
   2. **Coherence** assesses the logical consistency of the image and the absence of artifacts or visual glitches.
