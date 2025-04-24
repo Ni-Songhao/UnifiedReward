@@ -226,8 +226,10 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
                         model = LlavaQwenForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, attn_implementation=attn_implementation, config=llava_cfg, **kwargs)
                     else:
                         llava_cfg = LlavaQwenConfig.from_pretrained(model_path)
-
-                        setattr(llava_cfg, 'vocab_size', 152064)
+                        if '0.5b' in model_path:
+                            setattr(llava_cfg, 'vocab_size', 151936)
+                        else:
+                            setattr(llava_cfg, 'vocab_size', 152064)
 
                         model = LlavaQwenForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, attn_implementation=attn_implementation, config=llava_cfg, **kwargs)
 
