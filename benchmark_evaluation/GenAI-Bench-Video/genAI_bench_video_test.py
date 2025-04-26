@@ -12,7 +12,7 @@ import sys
 import warnings
 import os
 from datasets import load_dataset, load_from_disk
-
+import random
 pretrained = "CodeGoat24/UnifiedReward-7b"
 
 def _load_video(video_path, num_video_frames, loader_fps, fps=None, frame_count=None):
@@ -105,6 +105,18 @@ for i in tqdm.trange(len(dataset)):
         answer = 'same'
         num_tie += 1
     prompt = data['prompt']
+
+    if random.choices([True, False])[0]:
+        left_video = data['video_right']
+        right_video = data['video_left']
+        if answer == 'A':
+            answer = 'B'
+        elif answer == 'B':
+            answer = 'A'
+    else:
+        left_video = data['video_left']
+        right_video = data['video_right']
+            
     output = get_results(data['video_left'], data['video_right'], prompt)
 
     if 'Video 1 is better than Video 2.' in output:
