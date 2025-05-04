@@ -385,7 +385,7 @@ Thanks to all the contributors!
 ```bibtex
 @article{UnifiedReward,
   title={Unified Reward Model for Multimodal Understanding and Generation.},
-  author={Wang, Yibin and Zang, Yuhang, and Li, Hao and Jin, Cheng and Wang Jiaqi},
+  author={Wang, Yibin and Zang, Yuhang and Li, Hao and Jin, Cheng and Wang, Jiaqi},
   journal={arXiv preprint arXiv:2503.05236},
   year={2025}
 }
