@@ -55,8 +55,16 @@ def get_results(video_path_1, video_path_2, prompt):
 
     conv_template = "qwen_1_5"  # Make sure you use correct chat template for different models
     
-    question = '<image>\n'*16 + f'Suppose you are an expert in judging and evaluating the quality of AI-generated videos. You are given a text caption and the frames of two generated videos based on that caption. Your task is to evaluate and compare two videos based on two key criteria:\n1. Alignment with the Caption: Assess how well each video aligns with the provided caption. Consider the accuracy of depicted objects, their relationships, and attributes as described in the caption.\n2. Overall Video Quality: Examine the visual quality of each video, including clarity, detail preservation, color accuracy, and overall aesthetic appeal.\nCompare both videos using the above criteria and select the one that better aligns with the caption while exhibiting superior visual quality.\nProvide a clear conclusion such as \"Video 1 is better than Video 2.\", \"Video 2 is better than Video 1.\" and \"Both videos are equally good.\"\nYour task is provided as follows:\nText Caption: [{prompt}]'
-
+    question = (
+        "<image>\n" * len(images) +
+        "Imagine you are an expert tasked with evaluating AI-generated videos. You are provided with a text caption and two videos generated based on that caption. Your job is to assess and compare these videos based on the following two main factors:\n\n"
+        "1. Caption Alignment: Evaluate how closely each video matches the description provided in the caption. Pay attention to the accuracy of objects depicted, their relationships, and any attributes described in the caption.\n\n"
+        "2. Overall Video Quality: Look at the overall visual appeal of each video, considering clarity, the level of detail, color accuracy, and how aesthetically pleasing the video is.\n\n"
+        "Using these factors, compare the two videos and determine which one better reflects the caption and exhibits better visual quality.\n\n"
+        "Give your final judgment, such as 'Video 1 is better,' 'Video 2 is better,' or 'Both videos are equally good.'\n\n"
+        "Your task is as follows:\n"
+        f"Text Caption: [{prompt}]\n"
+    )
 
     conv = copy.deepcopy(conv_templates[conv_template])
     conv.append_message(conv.roles[0], question)
@@ -119,9 +127,9 @@ for i in tqdm.trange(len(dataset)):
             
     output = get_results(data['video_left'], data['video_right'], prompt)
 
-    if 'Video 1 is better than Video 2.' in output:
+    if 'Video 1 is better' in output:
         pred = 'A'
-    elif 'Video 2 is better than Video 1.' in output:
+    elif 'Video 2 is better' in output:
         pred = 'B'
     else:
         pred = 'same'
