@@ -170,6 +170,6 @@ through Reinforcement Fine-Tuning.},
 
 ## 🖼️ More Qualitative Cases
 
-<img src=./docs/images/vision_generation_case.png width="100%"/>
+<img src=../docs/static/images/think/vision_generation_case.png width="100%"/>
 
-<img src=./docs/images/vision_understanding_case.png width="100%"/>
+<img src=../docs/static/images/think/vision_understanding_case.png width="100%"/>
