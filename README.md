@@ -20,7 +20,10 @@
 <a href="https://codegoat24.github.io/UnifiedReward/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 <br>
-
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
+</a>
+<br>
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-0.5b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 0.5b -yellow">
 </a>
@@ -30,6 +33,8 @@
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b v1.5-yellow">
 </a>
+
+
 
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a)
@@ -43,6 +48,8 @@
 We released **UnifiedReward-Think** <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">🤗</a>, **the first unified multimodal CoT reward model**, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
+
+
 
 ## 🔥 News
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
