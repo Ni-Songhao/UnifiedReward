@@ -16,7 +16,7 @@ through Reinforcement Fine-Tuning
 (&#8224;corresponding author; *equal contribution)
 
 <a href="">
-<img src='https://img.shields.io/badge/arXiv-UnifiedReward-blue' alt='Paper PDF'></a>
+<img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
 </a>
