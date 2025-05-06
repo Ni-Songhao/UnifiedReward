@@ -33,18 +33,18 @@ through Reinforcement Fine-Tuning
 
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
-- [2025/5] 🔥🔥 We released all CoT Reward reasoning codes in `./inference` directory. 
-- [2025/5] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
-- [2025/5] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
-- [2025/5] 🔥🔥 We released our distilled image generation CoT reasoning cold start dataset and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
-- [2025/5] 🔥🔥 We released **UnifiedReward-Think-7b** in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
-- [2025/5] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/think) and [paper]().
+- [2025/5/6] 🔥🔥 We released all CoT Reward reasoning codes in `./inference` directory. 
+- [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
+- [2025/5/6] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
+- [2025/5/6] 🔥🔥 We released our distilled image generation CoT reasoning cold start dataset and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
+- [2025/5/6] 🔥🔥 We released **UnifiedReward-Think-7b** in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
+- [2025/5/6] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/think) and [paper]().
 
 ## 📖 Introduction
 
 This repository releases the **UnifiedReward-Think** -- the first unified multimodal CoT reward model, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
-<img src=./docs/images/teaser.png width="100%"/>
+<img src=../docs/static/images/think/teaser.png width="100%"/>
 
 
 ##  🔧 Environment Set Up
@@ -62,7 +62,7 @@ conda activate unifiedreward-think
 pip install -e ".[dev]"
 pip install flash_attn --no-build-isolation
 ```
-<img src=./docs/images/pipeline.png width="100%"/>
+<img src=../docs/static/images/think/pipeline_think.png width="100%"/>
 
 ## Training
 ### Stage 1. Cold Start 
