@@ -3,7 +3,7 @@
 through Reinforcement Fine-Tuning
     </h1>
 
-[Yibin Wang*](https://codegoat24.github.io), [Zhimin Li*](https://scholar.google.com/citations?user=Lnr1FQEAAAAJ&hl=zh-CN), [Yuhang Zang](https://yuhangzang.github.io/)&#8224;, Chunyu Wang, Qinglin Lu, [Cheng Jin](https://cjinfdu.github.io/)&#8224;, [Jiaqi Wang](https://myownskyw7.github.io/)&#8224;
+[Yibin Wang*](https://codegoat24.github.io), [Zhimin Li*](https://scholar.google.com/citations?user=Lnr1FQEAAAAJ&hl=zh-CN), [Yuhang Zang](https://yuhangzang.github.io/)&#8224;, [Chunyu Wang](https://scholar.google.com/citations?hl=zh-CN&user=VXQV5xwAAAAJ), Qinglin Lu, [Cheng Jin](https://cjinfdu.github.io/)&#8224;, [Jiaqi Wang](https://myownskyw7.github.io/)&#8224;
 
 [Fudan University]
 
