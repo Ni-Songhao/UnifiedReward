@@ -33,7 +33,7 @@ through Reinforcement Fine-Tuning
 
 ## 🔥 News
 Please leave us a star ⭐ if you find our work helpful.
-- [2025/5/6] 🔥🔥 We released all CoT Reward reasoning codes in `./inference` directory. 
+- [2025/5/6] 🔥🔥 We released all CoT reward reasoning codes in `./inference` directory. 
 - [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/5/6] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
 - [2025/5/6] 🔥🔥 We released our distilled image generation CoT reasoning cold start dataset and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
