@@ -10,8 +10,6 @@
 
 [Shanghai AI Lab]
 
-[Shanghai Academy of AI for Science]
-
 (&#8224;corresponding author)
 
 
