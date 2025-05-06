@@ -38,11 +38,11 @@ Please leave us a star ⭐ if you find our work helpful.
 - [2025/5] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
 - [2025/5] 🔥🔥 We released our distilled image generation CoT reasoning cold start dataset and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 - [2025/5] 🔥🔥 We released **UnifiedReward-Think-7b** in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
-- [2025/5] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/) and [paper](https://arxiv.org/pdf/2503.05236).
+- [2025/5] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/think) and [paper]().
 
 ## 📖 Introduction
 
-This repository release the **UnifiedReward-Think** -- the first unified multimodal CoT reward model, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
+This repository releases the **UnifiedReward-Think** -- the first unified multimodal CoT reward model, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
 <img src=./docs/images/teaser.png width="100%"/>
 
@@ -68,7 +68,7 @@ pip install flash_attn --no-build-isolation
 ### Stage 1. Cold Start 
 
 #### Data Preparation
-For cold start, we have released our image generation Chain-of-Thought (CoT) reward reasoning cold start dataset, distilled from GPT-4o, in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
+For cold start, we have released our image generation CoT reward reasoning [cold-start dataset](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 
 #### Training
 
