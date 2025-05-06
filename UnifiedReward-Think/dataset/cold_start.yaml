@@ -1,0 +1,4 @@
+datasets:
+  - json_path: dataset/cold_start/train_data.json
+    sampling_strategy: all
+    image_folder: dataset/cold_start
