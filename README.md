@@ -1,27 +1,15 @@
 <div align="center">
     <h1 align="center"> Unified Reward Model for Multimodal Understanding and Generation
     </h1>
-
-[Yibin Wang](https://codegoat24.github.io), [Yuhang Zang](https://yuhangzang.github.io/)&#8224;, [Hao Li](https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en), [Cheng Jin](https://cjinfdu.github.io/)&#8224;, [Jiaqi Wang](https://myownskyw7.github.io/)&#8224;
-
-[Fudan University]
-
-[Shanghai Innovation Institute]
-
-[Shanghai AI Lab]
-
-(&#8224;corresponding author)
-
+</div>
 
 <a href="https://arxiv.org/pdf/2503.05236">
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/UnifiedReward/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
-<br>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
-</a>
-<br>
+
+
+
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-0.5b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 0.5b -yellow">
 </a>
@@ -32,27 +20,44 @@
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b v1.5-yellow">
 </a>
 
-
-
-
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
+
+We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
+
+
+
+
+
+
+## 🔥🔥🔥 **UnifiedReward-Think**
+
+<div align="left">
+    <h3 align="left"> 
+Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning
+    </h3>
+
+<a href="">
+<img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
+<a href="https://codegoat24.github.io/UnifiedReward/think">
+<img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
+</a>
+
+
 
 
 </div>
 
-## 🔥🔥🔥 **UnifiedReward-Think**
-
-We released **UnifiedReward-Think** <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">🤗</a>, **the first unified multimodal CoT reward model**, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
+We released **UnifiedReward-Think** -- **the first unified multimodal CoT reward model**, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
-
-
-
 ## 🔥 News
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/5] 🔥🔥 We released [UnifiedReward-Think-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b), the first unified multimodal CoT reward model. See [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
 - [2025/4] 🔥🔥 We released [UnifiedReward-0.5B](https://huggingface.co/CodeGoat24/UnifiedReward-0.5b). Feel free to use it based on your needs.
 - [2025/4] 🔥🔥 We updated [UnifiedReward-7B](https://huggingface.co/CodeGoat24/UnifiedReward-7b), incorporating valuable feedback from the community, and released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
   1. **Alignment** quantifies how well an image matches its prompt.
@@ -67,10 +72,6 @@ Please leave us a star ⭐ if you find our work helpful.
 - [2025/3] 🔥🔥 We released our unified training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 - [2025/3] 🔥🔥 We released our checkpoints in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
 - [2025/3] 🔥 We launched the [project page](https://codegoat24.github.io/UnifiedReward/) and [paper](https://arxiv.org/pdf/2503.05236).
-
-## 📖 Introduction
-
-This repository release the **UnifiedReward** -- the first unified reward model for multimodal understanding and generation assessment, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
 
 <img src=./docs/static/images/pipeline.png width="100%"/>
 
