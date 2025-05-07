@@ -655,11 +655,12 @@ class LLaVAGRPOTrainer(Trainer):
 
         citation = textwrap.dedent(
             """\
-            @article{zhihong2024deepseekmath,
-                title        = {{DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models}},
-                author       = {Zhihong Shao and Peiyi Wang and Qihao Zhu and Runxin Xu and Junxiao Song and Mingchuan Zhang and Y. K. Li and Y. Wu and Daya Guo},
-                year         = 2024,
-                eprint       = {arXiv:2402.03300},
+            @article{UnifiedReward-Think,
+              title={Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning.},
+              author={Wang, Yibin and Li, Zhimin and Zang, Yuhang and Wang, Chunyu and Lu, Qinglin, and Jin, Cheng and Wang, Jiaqi},
+              journal={arXiv preprint arXiv:2505.03318},
+              year={2025}
+            }
             """
         )
 
@@ -673,8 +674,8 @@ class LLaVAGRPOTrainer(Trainer):
             comet_url=get_comet_experiment_url(),
             trainer_name="GRPO",
             trainer_citation=citation,
-            paper_title="DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
-            paper_id="2402.03300",
+            paper_title="Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning",
+            paper_id="2505.03318",
         )
 
         model_card.save(os.path.join(self.args.output_dir, "README.md"))
