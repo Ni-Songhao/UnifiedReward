@@ -36,7 +36,7 @@ Please leave us a star ⭐ if you find our work helpful.
 - [2025/5/6] 🔥🔥 We released all CoT reward reasoning codes in `./inference` directory. 
 - [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/5/6] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
-- [2025/5/6] 🔥🔥 We released our distilled image generation CoT reasoning cold start dataset and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
+- [2025/5/6] 🔥🔥 We released our constructed cold-start dataset [ImageGen-CoT-Reward-5K](https://huggingface.co/datasets/CodeGoat24/ImageGen-CoT-Reward-5K) and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 - [2025/5/6] 🔥🔥 We released **UnifiedReward-Think-7b** in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
 - [2025/5/6] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/think) and [paper]().
 
