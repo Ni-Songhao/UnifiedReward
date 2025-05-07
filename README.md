@@ -1,3 +1,7 @@
+
+<p align="center" width="100%">
+<img src="./docs/static/images/logo_resize.png"  width="80%" height="70%">
+</p>
 <div align="center">
     <h1 align="center"> Unified Reward Model for Multimodal Understanding and Generation
     </h1>
