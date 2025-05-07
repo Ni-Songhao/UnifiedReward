@@ -68,7 +68,7 @@ pip install flash_attn --no-build-isolation
 ### Stage 1. Cold Start 
 
 #### Data Preparation
-For cold start, we have released our image generation CoT reward reasoning cold-start dataset [mageGen-CoT-Reward-5K](https://huggingface.co/datasets/CodeGoat24/ImageGen-CoT-Reward-5K).
+For cold start, we have released our image generation CoT reward reasoning cold-start dataset [ImageGen-CoT-Reward-5K](https://huggingface.co/datasets/CodeGoat24/ImageGen-CoT-Reward-5K).
 
 #### Training
 
