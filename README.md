@@ -37,7 +37,7 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning
     </h3>
 
-<a href="">
+<a href="https://arxiv.org/pdf/2505.03318">
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/UnifiedReward/think">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
