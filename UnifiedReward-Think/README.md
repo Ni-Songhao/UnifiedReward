@@ -55,7 +55,7 @@ git clone https://github.com/CodeGoat24/UnifiedReward.git
 cd UnifiedReward/UnifiedReward-Think
 ```
 
-2. Install the inference package:
+2. Install the training package:
 ```bash
 conda create -n unifiedreward-think python=3.10
 conda activate unifiedreward-think
