@@ -15,7 +15,7 @@ through Reinforcement Fine-Tuning
 
 (&#8224;corresponding author; *equal contribution)
 
-<a href="">
+<a href="https://arxiv.org/pdf/2505.03318">
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
@@ -160,10 +160,9 @@ If you have any comments or questions, please open a new issue or feel free to c
 ## ⭐ Citation
 ```bibtex
 @article{UnifiedReward-Think,
-  title={Unified Multimodal Chain-of-Thought Reward Model
-through Reinforcement Fine-Tuning.},
+  title={Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning.},
   author={Wang, Yibin and Li, Zhimin and Zang, Yuhang and Wang, Chunyu and Lu, Qinglin, and Jin, Cheng and Wang, Jiaqi},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2505.03318},
   year={2025}
 }
 ```
