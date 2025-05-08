@@ -32,6 +32,7 @@ through Reinforcement Fine-Tuning
 </div>
 
 ## 🔥 News
+😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 Please leave us a star ⭐ if you find our work helpful.
 - [2025/5/6] 🔥🔥 We released all CoT reward reasoning codes in `./inference` directory. 
 - [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
