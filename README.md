@@ -104,7 +104,7 @@ Please leave us a star ⭐ if you find our work helpful.
 | GPT-4o              | 49.1    | 67.6   | **70.5** | 65.8             | 62.4          |
 | LLaVA-Critic        | 47.4    | 38.5   | 53.8    | 46.9             | 46.6          |
 | OV-7B           | 32.2    | 20.1   | 57.1    | 29.6             | 36.5          |
-| **UnifiedReward**   | 60.6 | 78.4 | 60.5 | 66.1             | 66.5      |
+| **UnifiedReward**   | 76.5 | 58.1 | 65.1 | 67.5             | 66.6      |
 </details>
 
 ---
