@@ -245,4 +245,4 @@ with gr.Blocks(title="UnifiedReward-Think") as demo:
 
 
 if __name__ == "__main__":
-    demo.launch(server_name="29.210.133.214", server_port=8081)
+    demo.launch()
