@@ -49,14 +49,17 @@ Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuni
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
 </a>
 
-
-
-
 </div>
 
 We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward model**, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
+
+🔥🔥 We released Gradio for UnifiedReward-Think in `./UnifiedReward-Think/gradio` directory!
+<p align="center" width="100%">
+<img src="./docs/static/images/think/gradio_case.png"  width="80%" height="70%">
+</p>
+
 ## 🔥 News
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
