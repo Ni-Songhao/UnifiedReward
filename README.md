@@ -55,8 +55,8 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
 
-🔥🔥 We released Gradio for UnifiedReward-Think in `./UnifiedReward-Think/gradio` directory!
-<p align="center" width="100%">
+🔥🔥 We released Gradio for UnifiedReward-Think!
+<p align="left" width="100%">
 <img src="./docs/static/images/think/gradio_case.png"  width="80%" height="70%">
 </p>
 
