@@ -35,6 +35,7 @@ through Reinforcement Fine-Tuning
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/5/10] 🔥🔥 We released Gradio code in `./UnifiedReward-Think/gradio` directory!
 - [2025/5/6] 🔥🔥 We released all CoT reward reasoning codes in `./inference` directory. 
 - [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
 - [2025/5/6] 🔥🔥 We released our LLaVA-based multimodal GRPO training code.
@@ -65,6 +66,21 @@ pip install -e ".[dev]"
 pip install flash_attn --no-build-isolation
 ```
 <img src=../docs/static/images/think/pipeline_think.png width="100%"/>
+
+
+## 😄 Gradio Demo
+1. Install the gradio package:
+```bash
+pip install gradio
+```
+2. Run
+
+```bash
+python gradio/app.py
+```
+<p align="center" width="100%">
+<img src="../docs/static/images/think/gradio_case.png"  width="80%" height="70%">
+</p>
 
 ## Training
 ### Stage 1. Cold Start 
