@@ -78,7 +78,7 @@ pip install gradio
 ```bash
 python gradio/app.py
 ```
-<p align="center" width="100%">
+<p align="left" width="100%">
 <img src="../docs/static/images/think/gradio_case.png"  width="80%" height="70%">
 </p>
 
