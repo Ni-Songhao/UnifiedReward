@@ -30,7 +30,7 @@
 We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
 
 
-
+🔥🔥 **UnifiedReward-qwen-7b is coming soon!!**
 
 
 
