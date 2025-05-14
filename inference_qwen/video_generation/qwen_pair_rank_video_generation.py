@@ -17,15 +17,6 @@ model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
 )
 processor = AutoProcessor.from_pretrained(model_path)
 
-def _load_video(video_path, num_video_frames=8, loader_fps=0.0, fps=None, frame_count=None):
-    from llava.mm_utils import opencv_extract_frames
-    try:
-        pil_imgs, _ = opencv_extract_frames(video_path, num_video_frames, loader_fps, fps, frame_count)
-    except Exception as e:
-        print(f"[WARNING] Failed to load video {video_path}: {e}")
-        pil_imgs = [Image.new("RGB", (448, 448), (0, 0, 0))] * num_video_frames
-    return pil_imgs
-
 prompt = ""
 
 video_path_1 = "/path/to/video1"
