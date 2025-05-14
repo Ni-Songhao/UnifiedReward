@@ -32,6 +32,7 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 🔥🔥 **UnifiedReward-qwen-7b is coming soon!!**
 
+😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their image generation quality evaluation metric!
 
 
 ## 🔥🔥🔥 **UnifiedReward-Think**
