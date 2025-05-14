@@ -21,8 +21,8 @@ tokenizer, model, image_processor, max_length = load_pretrained_model(pretrained
 model.eval()
 
 import json
-with open('./data.json', 'r') as file:
-    dataset = json.load(file)
+
+dataset = load_dataset("KwaiVGI/VideoGen-RewardBench")['test']
 
 group_correct = {}
 group_total = {}
@@ -45,7 +45,7 @@ correct = 0
 for i in tqdm.trange(len(dataset)):
     data = dataset[i]
 
-    image = Image.open(data['image'])
+    image = data['image']
     image_tensor = process_images([image], image_processor, model.config)
     image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]
 
