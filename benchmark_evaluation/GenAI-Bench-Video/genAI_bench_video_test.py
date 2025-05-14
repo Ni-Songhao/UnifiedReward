@@ -40,10 +40,10 @@ def get_results(video_path_1, video_path_2, prompt):
     frame_count = None
 
     images, frames_loaded = _load_video(
-        os.path.join('./videos', video_path_1), num_video_frames, loader_fps, fps=fps, frame_count=frame_count
+        video_path_1, num_video_frames, loader_fps, fps=fps, frame_count=frame_count
     )
     images_, frames_loaded = _load_video(
-        os.path.join('./videos', video_path_2), num_video_frames, loader_fps, fps=fps, frame_count=frame_count
+        video_path_2, num_video_frames, loader_fps, fps=fps, frame_count=frame_count
     )
     images.extend(images_)
     image_sizes = []
@@ -88,8 +88,7 @@ def get_results(video_path_1, video_path_2, prompt):
     return output
 
 import json
-with open('./data.json', 'r') as file:
-    dataset = json.load(file)
+dataset = load_dataset("TIGER-Lab/GenAI-Bench", 'video_generation')['test']
 
 warnings.filterwarnings("ignore")
 
@@ -115,17 +114,17 @@ for i in tqdm.trange(len(dataset)):
     prompt = data['prompt']
 
     if random.choices([True, False])[0]:
-        left_video = data['video_right']
-        right_video = data['video_left']
+        left_video = data['right_video']
+        right_video = data['left_video']
         if answer == 'A':
             answer = 'B'
         elif answer == 'B':
             answer = 'A'
     else:
-        left_video = data['video_left']
-        right_video = data['video_right']
+        left_video = data['left_video']
+        right_video = data['right_video']
             
-    output = get_results(data['video_left'], data['video_right'], prompt)
+    output = get_results(left_video, right_video, prompt)
 
     if 'Video 1 is better' in output:
         pred = 'A'
