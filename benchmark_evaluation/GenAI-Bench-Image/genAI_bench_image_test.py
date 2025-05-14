@@ -14,7 +14,7 @@ import tqdm
 import json
 
 pretrained = "CodeGoat24/UnifiedReward-7b"
-dataset = load_dataset("TIGER-Lab/GenAI-Bench", 'video_generation')['test']
+dataset = load_dataset("TIGER-Lab/GenAI-Bench", 'image_generation')['test']
 warnings.filterwarnings("ignore")
 
 model_name = "llava_qwen"
