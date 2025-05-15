@@ -15,8 +15,6 @@ through Reinforcement Fine-Tuning
 
 (&#8224;corresponding author; *equal contribution)
 
-Shanghai Innovation Institute is an institution dedicated to innovation in education and research in the field of AI.
-
 <a href="https://arxiv.org/pdf/2505.03318">
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
