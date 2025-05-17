@@ -81,12 +81,8 @@ Please leave us a star ⭐ if you find our work helpful.
   3. **Style** reflects the visual appeal of the image, independent of the prompt.
 
   Welcome to try the latest version, and the inference code is in `./inference/point_score_ACS_image_generation.py`.
-- [2025/3] 🔥🔥 We released all pair rank and point score inference codes in `./inference` directory. 
-- [2025/3] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
-- [2025/3] 🔥🔥 We released image and video understanding and generation DPO code.
-- [2025/3] 🔥🔥 We released UnifiedReward training code.
-- [2025/3] 🔥🔥 We released our unified training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
-- [2025/3] 🔥🔥 We released our checkpoints in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
+- [2025/3] 🔥🔥 We released all training [datasets](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede) and model [checkpoints](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
+- [2025/3] 🔥🔥 We released all training, inference, and evaluation code.
 - [2025/3] 🔥 We launched the [project page](https://codegoat24.github.io/UnifiedReward/) and [paper](https://arxiv.org/pdf/2503.05236).
 
 <img src=./docs/static/images/pipeline.png width="100%"/>
