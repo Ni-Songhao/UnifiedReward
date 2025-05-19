@@ -228,6 +228,12 @@ bash train.sh
 
 
 ### 3. Inference
+
+For Qwen2.5-VL based UnifiedReward models, you should first install the inference packages as follows:
+```bash
+pip install git+https://github.com/huggingface/transformers accelerate qwen-vl-utils[decord]==0.0.8
+```
+
 We provide reference pair ranking and point score inference code for each task in the `./inference` and `./inference_qwen` directories.
 
 ```bash
