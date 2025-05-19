@@ -25,6 +25,9 @@
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b v1.5-yellow">
 </a>
 <br>
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward qwen 3b-yellow">
+</a>
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward qwen 7b-yellow">
 </a>
