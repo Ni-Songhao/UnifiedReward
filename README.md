@@ -171,7 +171,29 @@ pip install flash_attn==2.5.8 --no-build-isolation
 
 
 ## 💻 Training UnifiedReward
-### 1. Unified Preference Training Dataset Preparation
+
+### 1. Training based on Qwen2.5-VL-Instruct (Recommended)
+We use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to train the SFT model.
+
+1. Clone the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) repository and install the dependencies.
+
+```bash
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]"
+```
+
+Follow its README to prepare our released [datasets](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
+
+2. Run the following command to train the SFT model.
+
+```bash
+llamafactory-cli train examples/train_full/qwen2_5_vl_full_sft.yaml
+```
+
+### 2. Training based on LLaVA-Onevision
+
+#### 2.1 Unified Preference Training Dataset Preparation
 Please download our constructed unified preference dataset from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede) and put it in `./dataset/`.
 
 ```
@@ -195,13 +217,15 @@ dataset
 └── VideoFeedback
 └── train_data.yaml
 ```
-### 2. Training
+#### 2.2 Training based on LLaVA-Onevision
 ```bash
 bash train.sh
 ```
 
+
+
 ### 3. Inference
-We provide reference pair ranking and point score inference code for each task in the `./inference` directory.
+We provide reference pair ranking and point score inference code for each task in the `./inference` and `./inference_qwen` directories.
 
 ```bash
 inference
