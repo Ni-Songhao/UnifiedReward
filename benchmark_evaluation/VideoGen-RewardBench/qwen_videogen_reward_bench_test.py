@@ -8,7 +8,7 @@ import warnings
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
-
+from datasets import load_dataset, load_from_disk
 warnings.filterwarnings("ignore")
 
 model_path = 'CodeGoat24/UnifiedReward-qwen-7b'
@@ -65,9 +65,9 @@ for i in trange(len(dataset)):
     prompt = data['prompt']
     output = get_results(data['path_A'], data['path_B'], prompt)
 
-    if output in 'Video 1 is better':
+    if 'Video 1 is better' in output:
         pred = 'A'
-    elif output in 'Video 2 is better':
+    elif 'Video 2 is better' in output:
         pred = 'B'
     else:
         pred = 'same'
