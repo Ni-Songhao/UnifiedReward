@@ -191,7 +191,7 @@ Follow its README to prepare our released [datasets](https://huggingface.co/coll
 2. Run the following command to train the SFT model.
 
 ```bash
-llamafactory-cli train examples/train_full/qwen2_5_vl_full_sft.yaml
+llamafactory-cli train examples/train_full/qwen2_5vl_full_sft.yaml
 ```
 
 ### 2. Training based on LLaVA-Onevision
