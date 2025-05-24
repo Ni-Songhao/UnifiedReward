@@ -5,6 +5,7 @@ import random
 from PIL import Image
 from tqdm import trange
 import warnings
+from datasets import load_dataset
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
