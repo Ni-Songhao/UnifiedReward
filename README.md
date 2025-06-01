@@ -41,7 +41,10 @@
 We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
 
 
+
 🔥🔥 We released UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!
+
+🔥 We release vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory!
 
 😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their image generation quality evaluation metric!
 
@@ -78,7 +81,7 @@ Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/t
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
-- [2025/5] 🔥🔥 We released [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b), a more powerful unified reward model built upon [Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)!! All its inference and evaluation codes are provided in `./inference_qwen` and `./benchmark_evaluation` directory, respectively.
+- [2025/5] 🔥🔥 We released [UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!(https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)! All its inference and evaluation codes are provided in `./inference_qwen` and `./benchmark_evaluation` directory, respectively.
 - [2025/5] 🔥🔥 We released [UnifiedReward-Think-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b), the first unified multimodal CoT reward model. See [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
 - [2025/4] 🔥🔥 We released [UnifiedReward-0.5B](https://huggingface.co/CodeGoat24/UnifiedReward-0.5b). Feel free to use it based on your needs.
 - [2025/4] 🔥🔥 We updated [UnifiedReward-7B](https://huggingface.co/CodeGoat24/UnifiedReward-7b), incorporating valuable feedback from the community, and released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
@@ -175,7 +178,6 @@ pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
 
-
 ## 💻 Training UnifiedReward
 
 ### 1. Training based on Qwen2.5-VL-Instruct (Recommended)
@@ -253,6 +255,23 @@ inference
 Note that our model is not constrained to a fixed input prompt style.
 You can flexibly adjust inputs based on your requirements.
 
+### 4. vLLM Inference
+We provide vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory.
+
+1. Install vLLM
+```bash
+pip install vllm
+pip install git+https://github.com/huggingface/transformers
+```
+2. Deploy vLLM Server
+```bash
+bash vllm_qwen/vllm_server.sh
+```
+
+3. Inference Request to vLLM Server
+```bash
+python vllm_qwen/vllm_inference.py
+```
 
 ## ✨ Direct Preference Optimization 
 ### 🎨 Image and Video Understanding DPO
