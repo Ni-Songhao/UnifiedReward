@@ -46,6 +46,8 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 🔥 We release vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory!
 
+🔥 We release SGLang inference code for UnifiedReward-llava in `sglang_llava` directory!
+
 😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their image generation quality evaluation metric!
 
 
@@ -177,6 +179,64 @@ pip install -e ".[train]"
 pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
+## 🚀 Inference
+
+For Qwen2.5-VL based UnifiedReward models, you should first install the inference packages as follows:
+```bash
+pip install git+https://github.com/huggingface/transformers accelerate qwen-vl-utils[decord]==0.0.8
+```
+
+We provide reference pair ranking and point score inference code for each task in the `./inference` and `./inference_qwen` directories.
+
+```bash
+inference
+├── image_generation                  
+    ├── pair_rank_image_generation.py            
+    └── point_score_image_generation.py         
+├── video_understanding                 
+    ├── pair_rank_video_understanding.py            
+    └── point_score_video_understanding.py
+... 
+```
+
+Note that our model is not constrained to a fixed input prompt style.
+You can flexibly adjust inputs based on your requirements.
+
+### 1. vLLM Inference
+We provide vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory.
+
+1. Install vLLM
+```bash
+pip install vllm
+pip install git+https://github.com/huggingface/transformers
+```
+2. Deploy vLLM Server
+```bash
+bash vllm_qwen/vllm_server.sh
+```
+
+3. Inference Request to vLLM Server
+```bash
+python vllm_qwen/vllm_inference.py
+```
+
+### 2. SGLang Inference
+We provide SGLang inference code for UnifiedReward-llava in `sglang_llava` directory.
+
+1. Install SGLang
+```bash
+pip install "sglang[all]"
+```
+2. Deploy SGLang Server
+```bash
+bash sglang_llava/sglang_server.sh
+```
+
+3. Inference Request to SGLang Server
+```bash
+python sglang_llava/sglang_inference.py
+```
+
 
 ## 💻 Training UnifiedReward
 
@@ -230,48 +290,6 @@ dataset
 bash train.sh
 ```
 
-
-
-### 3. Inference
-
-For Qwen2.5-VL based UnifiedReward models, you should first install the inference packages as follows:
-```bash
-pip install git+https://github.com/huggingface/transformers accelerate qwen-vl-utils[decord]==0.0.8
-```
-
-We provide reference pair ranking and point score inference code for each task in the `./inference` and `./inference_qwen` directories.
-
-```bash
-inference
-├── image_generation                  
-    ├── pair_rank_image_generation.py            
-    └── point_score_image_generation.py         
-├── video_understanding                 
-    ├── pair_rank_video_understanding.py            
-    └── point_score_video_understanding.py
-... 
-```
-
-Note that our model is not constrained to a fixed input prompt style.
-You can flexibly adjust inputs based on your requirements.
-
-### 4. vLLM Inference
-We provide vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory.
-
-1. Install vLLM
-```bash
-pip install vllm
-pip install git+https://github.com/huggingface/transformers
-```
-2. Deploy vLLM Server
-```bash
-bash vllm_qwen/vllm_server.sh
-```
-
-3. Inference Request to vLLM Server
-```bash
-python vllm_qwen/vllm_inference.py
-```
 
 ## ✨ Direct Preference Optimization 
 ### 🎨 Image and Video Understanding DPO
