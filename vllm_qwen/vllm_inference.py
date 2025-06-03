@@ -24,17 +24,27 @@ class VLMessageClient:
             return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
     def build_messages(self, item, image_root):
-        image_path = os.path.join(image_root, item['images'][0])
+        content = []
+        if image_root:
+            for i in range(len(item['images'])):
+                item['images'][i] = os.path.join(image_root, item['images'][i])
+
+        for i in range(len(item["images"])): 
+            if os.path.exists(item['images'][i]): # image path
+                base64_image = self._encode_image(item['images'][i])
+            else: # base64
+                base64_image = item['images'][i]
+            content.append({
+                        "type": "image_url",
+                        "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}
+                    })
+
+        content.append({"type": "text", "text": item["problem"]})
+
         return [
             {
                 "role": "user",
-                "content": [
-                    {"type": "image_url", "image_url": {"url": f"file://{image_path}"}},
-                    {
-                        "type": "text",
-                        "text": f"{item['problem']}"
-                    }
-                ]
+                "content": content
             }
         ]
 
