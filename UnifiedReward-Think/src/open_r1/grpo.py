@@ -21,7 +21,7 @@ from typing import Optional
 from datasets import load_dataset, load_from_disk
 from transformers import Qwen2VLForConditionalGeneration
 
-from trainer import Qwen2VLGRPOTrainer, Qwen2VLGRPOVLLMTrainerModified
+from trainer import Qwen2VLGRPOTrainer
 from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config
 
 from datasets import Dataset, DatasetDict
@@ -236,7 +236,7 @@ def main(script_args, training_args, model_args):
     train_dataset = train_dataset.map(make_conversation_image_and_video)
 
     
-    trainer_cls = Qwen2VLGRPOTrainer if not training_args.use_vllm else Qwen2VLGRPOVLLMTrainerModified
+    trainer_cls = Qwen2VLGRPOTrainer
     print("using: ", trainer_cls)
 
     # Initialize the GRPO trainer
