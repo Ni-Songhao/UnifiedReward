@@ -36,6 +36,7 @@
 </a>
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-GGUF_Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
 
 We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
@@ -49,6 +50,8 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 🔥 We release SGLang inference code for UnifiedReward-llava in `sglang_llava` directory!
 
 😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their image generation quality evaluation metric!
+
+😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
 
 
 ## 🔥🔥🔥 **UnifiedReward-Think**
