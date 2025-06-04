@@ -86,21 +86,22 @@ python gradio/app.py
 <img src="../docs/static/images/think/gradio_case.png"  width="80%" height="70%">
 </p>
 
-## Training
-### Stage 1. Cold Start 
+## 💻 Training
+### LLaVA-based Training
+#### Stage 1. Cold Start 
 
-#### Data Preparation
+##### Data Preparation
 For cold start, we have released our image generation CoT reward reasoning cold-start dataset [ImageGen-CoT-Reward-5K](https://huggingface.co/datasets/CodeGoat24/ImageGen-CoT-Reward-5K).
 
-#### Training
+##### Training
 
 ```
 bash 0.cold_start.sh
 ```
 
-### Stage 2. Rejection Sampling 
+#### Stage 2. Rejection Sampling 
 
-#### Data Preparation
+##### Data Preparation
 For rejection sampling, you should use the cold-started reward model to infer over the large-scale training data introduced in our paper. 
 Samples that are correctly predicted by the model should be retained and used for rejection sampling.
 
@@ -128,12 +129,14 @@ Each rejection sampling training data should follow this format:
   ]
 }
 ```
-#### Training
+##### Training
 
 ```
 bash 1.rejection_sampling.sh
 ```
-### 3. GRPO Data Preparation
+#### Stage 3. GRPO 
+
+##### Data Preparation
 Samples that are incorrectly predicted by the reward model should be used for GRPO training. 
 
 Each GRPO data should be formatted as:
@@ -150,13 +153,25 @@ Each GRPO data should be formatted as:
 }
 ```
 
-#### Training
+##### Training
 ```bash
 bash grpo.sh
 ```
 
-### 3. Inference
-We provide reference CoT Reward reasoning codes for each task in the `./inference` directory.
+### Qwen-based Training
+For cold start and rejection sampling, we adopt [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) training framework.
+
+For GRPO, we use [EasyR1](https://github.com/hiyouga/EasyR1) for efficient training.
+
+We also provide TRL-based GRPO code in `src/open_r1` directory.
+
+```bash
+bash qwen_grpo.sh
+```
+
+## 🚀 Inference and Evaluation
+
+We provide reference CoT Reward reasoning codes for each task in the `./inference` and `./inference_qwen` directories.
 
 ```bash
 inference
@@ -166,11 +181,9 @@ inference
     ├── infer_cot_video_understanding.py
 ... 
 ```
-
 Note that our model is not constrained to a fixed input prompt style.
 You can flexibly adjust inputs based on your requirements.
 
-## 🚀 Evaluation
 We provide evaluation code for [GenAI-Bench-Video](https://github.com/TIGER-AI-Lab/GenAI-Bench), [GenAI-Bench-Image](https://github.com/TIGER-AI-Lab/GenAI-Bench), [VideoGen-RewardBench](https://huggingface.co/datasets/KwaiVGI/VideoGen-RewardBench) and [VL-RewardBench](https://huggingface.co/datasets/MMInstruction/VL-RewardBench) benchmarks.
 
 
