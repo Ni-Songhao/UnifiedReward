@@ -20,6 +20,9 @@ through Reinforcement Fine-Tuning
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
 </a>
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
+</a>
 <a href="https://codegoat24.github.io/UnifiedReward/think">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 <br>
@@ -35,6 +38,7 @@ through Reinforcement Fine-Tuning
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
+- [2025/6/4] 🔥🔥 We released [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)!! All inference and evaluation code are provided in `qwen_inference` and `benchmark_evaluation` directories. 
 - [2025/5/10] 🔥🔥 We released Gradio code in `./UnifiedReward-Think/gradio` directory!
 - [2025/5/6] 🔥🔥 We released all CoT reward reasoning codes in `./inference` directory. 
 - [2025/5/6] 🔥🔥 We released the evaluation code in `benchmark_evaluation` directory.
