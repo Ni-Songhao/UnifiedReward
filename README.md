@@ -49,7 +49,9 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 🔥 We release SGLang inference code for UnifiedReward-llava in `sglang_llava` directory!
 
-😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their image generation quality evaluation metric!
+😊 We appreciate the excellent work [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017), which provides further evidence of **the robustness and effectiveness of UnifiedReward in image generation RL** tasks.
+
+😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their **image generation quality evaluation metric**!
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
 
