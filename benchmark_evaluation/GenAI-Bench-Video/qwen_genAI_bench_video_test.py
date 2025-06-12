@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 
 model_path = 'CodeGoat24/UnifiedReward-qwen-7b'
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-    model_path, torch_dtype="auto", device_map="auto"
+    model_path, torch_dtype="auto", device_map={"": 'cuda:0'}
 )
 processor = AutoProcessor.from_pretrained(model_path)
 
