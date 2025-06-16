@@ -51,6 +51,12 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 😊 We appreciate the excellent work [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017), which provides further evidence of **the robustness and effectiveness of UnifiedReward in image generation RL** tasks.
 
+| Method     | HPS | ImageReward | UnifiedReward |
+|------------|-----------|-----------|-----------|
+|  Janus-Pro + DPO        | 77.3      | 77.7      | **80.0**      |
+| Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
+| Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
+
 😊 We appreciate the [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their **image generation quality evaluation metric**!
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
