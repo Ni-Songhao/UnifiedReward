@@ -61,6 +61,17 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
 
+😊 We sincerely thank the [Hunyuan](https://hunyuan.tencent.com/) team of Tencent for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
+| Model                | Alignment | Coherence | Style |
+|---------------------|------------------|-----------------------|------------------|
+| Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
+| Imagen-4.0          | 3.6792         | 3.8049                | 3.4756           |
+| Recraft-v3          | 3.6611           | 3.8409              | **3.5158**       |
+| OpenAI-GPT-image-1  | _3.6890_     | **3.8448**            | 3.4960           |
+| Imagen-3.0          | 3.6733           | 3.8027                | 3.4674           |
+| Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
+
+
 
 ## 🔥🔥🔥 **UnifiedReward-Think**
 
