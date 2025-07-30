@@ -16,8 +16,7 @@
 ### Stage1
 
 1. 数据准备：按照github原仓库所需的数据，以及对应的url进行下载和解压。所有文件位于./dataset内
-
-2. 开始训练：按照llava的超参数对Qwen3的微调文件进行配置。按照[LLama-factory](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/data_preparation.html)对数据格式的要求完善data_info.json。
+2. 开始训练：按照llava的超参数对Qwen3的微调文件进行配置。按照[LLama-factory](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/data_preparation.html)对数据格式的要求完善data_info.json。（A800-80G*3）
 
    ```shell
    llamafactory-cli train cold_start.yam
@@ -35,7 +34,6 @@
    ```
 
    本项目在推理文件中将数据读取，格式整理，vllm推理，判断及保存进行了解耦。通过对路径及特定函数的修改可以处理所有数据集
-
 2. 开始训练：按照llava的超参数对Qwen3的微调文件及进行配置
 
    ```shell
@@ -51,15 +49,14 @@
    ```shell
    python merge_dpo.py
    ```
-
-2. 开始训练：使用TRL-Based进行DPO方式的训练。
+2. 开始训练：使用TRL-Based进行DPO方式的训练。（A800-80G*3）
 
    ```shell
    accelerate lanuch DPO_VL.py --model_name_or_path --data_path --image_folder
    ```
 
-   | <img src="./asset/DPO_loss.png" style="zoom:50%;" /> | <img src="./asset/reward_chosen.png" style="zoom:50%;" /> | <img src="./asset/reward_reject.png" style="zoom:50%;" /> |
-   | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+   | `<img src="./asset/DPO_loss.png" style="zoom:50%;" />` | `<img src="./asset/reward_chosen.png" style="zoom:50%;" />` | `<img src="./asset/reward_reject.png" style="zoom:50%;" />` |
+   | -------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 
    能够看出添加的部分能够顺利完成DPO的训练，但是受限于实验设备，在小规模数据集的使用下，基本已经已经过拟合了。
 
